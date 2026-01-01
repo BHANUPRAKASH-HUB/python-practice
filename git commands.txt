@@ -1,0 +1,62 @@
+git init                 # Initialize a new Git repository
+git clone <url>          # Clone an existing remote repository
+
+git status               # Show current repository status
+git add .                # Stage all changes
+git add file.txt         # Stage a specific file
+git commit -m "msg"      # Commit staged changes
+git commit --amend       # Edit the last commit
+
+git log                  # View commit history
+git log --oneline        # View compact commit history
+git show <commit-id>     # Show details of a commit
+git diff                 # Show unstaged changes
+
+git branch               # List branches
+git branch new-branch    # Create a new branch
+git checkout branch      # Switch branches
+git checkout -b feature  # Create and switch branch
+git merge feature        # Merge a branch into current
+
+git remote -v            # Show remote repositories
+git remote add origin    # Add a remote repository
+git fetch                # Fetch changes from remote
+git pull                 # Fetch + merge changes
+git push                 # Push commits to remote
+git push -u origin main  # First push with tracking
+
+git stash                # Temporarily save uncommitted work
+git stash pop            # Restore stashed work
+
+git reset HEAD file.txt  # Unstage a file
+git reset --soft HEAD~1  # Undo commit, keep changes
+git reset --hard HEAD~1  # Undo commit, delete changes
+
+git reflog               # View all Git actions (recovery tool)
+
+
+
+
+
+🔹 SETUP (Once)
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "you@email.com"
+git config --list
+
+🧠 How to remember (Mental grouping)
+Daily work (use every day)
+status → add → commit → pull → push
+
+Branching
+branch → checkout → merge
+
+Fix mistakes
+reset → amend → reflog
+
+Collaboration
+clone → fetch → pull → push
+
+🎯 Interview-ready one-liner
+
+“In daily development I mainly use around 25–30 Git commands, covering status, staging, commits, branching, merging, remote sync, stashing, and recovery using reflog.”
